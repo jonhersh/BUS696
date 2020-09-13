@@ -1,0 +1,7 @@
+# id: individual user ID
+# anychildren: whether user has any children
+# broadband: user has broadband access (0,1)
+# hispanic: user is of race hispanic (0,1)
+# race: race of user (asian, black, other, white)
+# region: (MW: midwest, NE: northeast, S: south, W: west
+# spend: household online spending in past year in USD
