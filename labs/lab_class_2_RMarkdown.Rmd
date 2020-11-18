@@ -1,0 +1,104 @@
+---
+title: "Lab Class 2: Rmarkdown"
+author: "Change to your name"
+subtitle: BUS 696, Fall 2020, Zoom Professor Hersh
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+
+
+# set seed to your own favorite number
+set.seed(1818)
+options(width=70)
+options(scipen=99)
+
+
+# general rchunk code options
+
+# this sets text to small
+opts_chunk$set(tidy.opts=list(width.wrap=50),tidy=TRUE, size = "vsmall")  
+opts_chunk$set(message = FALSE,                                          
+               warning = FALSE,
+               # "caching" stores objects in code chunks and only rewrites if you change things
+               cache = TRUE,                               
+               # automatically downloads dependency files
+               autodep = TRUE,
+               # 
+               cache.comments = FALSE,
+               # 
+               collapse = TRUE,
+               fig.width = 5,  
+               fig.height = 4,
+               fig.align='center')
+
+
+```
+
+this is just text. Here please look at my code below. 
+
+```{r}
+library('tidyverse')
+data(mpg)
+dim(mpg)
+
+```
+
+This is some more text
+
+```{r}
+library('ggplot2')
+names(mpg)
+
+ggplot(mpg, aes(x = year, y = cty)) + geom_point()
+```
+
+
+## Question 1 
+1. Load the `tidyverse` library, and the `mpg` dataset using the command `data(mpg)`. 
+
+2. Use the `glimpse` function to summarize the dataset. 
+
+3. Using the `ggplot2` package create two plots: 1) a scatterplot, and 2) a barplot, using variables of your choosing. 
+
+4. Export (or *compile*) your RMarkdown document to an HTML file.  
+
+
+```{r}
+# if you get an error on loading libraries install package first
+# 
+
+
+
+
+```
+
+# Questions 1 a). 
+
+See the graph below which shows that ba
+
+```{r}
+# this 
+
+
+```
+
+# Questions 1 b). 
+
+Here is the different stuff 
+
+```{r}
+# this 
+
+library('tidyverse')
+data(mpg)
+summary(mpg)
+
+
+ggplot(mpg, aes(x = displ, y = year)) + geom_point()
+ 
+```
